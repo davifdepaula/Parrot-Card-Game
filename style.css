@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: #eef9bf;
     width: 100vw;
@@ -10,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .header h1 {
@@ -19,14 +23,44 @@ body {
     font-weight: 700;
 }
 
+/* fim header */
+
+/* main */
+
+.main {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card {
+    width: 117px;
+    background-color: #99CEA8;
+    margin: 35px;
+    padding: 24px 7px 22px 10px;
+}
+
+.list img {
+    width: 100px;
+}
+
+
+/* fim main */ 
+
+
+
 
 @media (max-width: 635px){
-    .header{
-        width: 312px; 
-        margin-right: auto;
-        margin-left: auto;  
-    }
-
     .header h1 {
         font-size: 36px;
     }
