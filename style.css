@@ -52,7 +52,7 @@ header h1 {
 
 main {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin: auto;
     width: 80%;
@@ -62,7 +62,7 @@ main {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .card {
@@ -71,12 +71,13 @@ main {
     display: flex;
     align-items: center;
     background-color: #99CEA8;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
     margin: 24px 7px 22px 10px;
     position: relative;
     transition: all 0.5s ease;
     transform-style: preserve-3d;
 }
-
 
 .front img{
     width: 117px;
@@ -99,6 +100,9 @@ main {
     display: none;
 }
 
+.reveal-card {
+    transform: rotateY(180deg);
+}
 
 
 /* fim main */ 

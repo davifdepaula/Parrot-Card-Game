@@ -1,5 +1,4 @@
-//let numberCards = Number(prompt("Digite a quantidade de cartas que deseja jogar: "))
-let numberCards = 4
+let numberCards = Number(prompt("Digite a quantidade de cartas que deseja jogar: "))
 let plays = 0, seconds = 0
 const timer = document.querySelector('.timer span');
 
@@ -126,9 +125,7 @@ function endGame(){
 
 function secondClick() {
     const firstImg = firstCard.getElementsByTagName('img')[0].alt
-    console.log(firstImg)
     const secondImg = secondCard.getElementsByTagName('img')[0].alt
-    console.log(secondImg)
     if (firstImg === secondImg) {
         isInfront.push(firstImg)
         setTimeout(() => {
@@ -178,6 +175,7 @@ const startTimer = () => {
 }
 
 window.onload = () => {
-   // startTimer();
+    startTimer();
     startGame();
+
 }
