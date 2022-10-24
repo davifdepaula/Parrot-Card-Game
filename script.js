@@ -151,7 +151,7 @@ function showFront(element) {
     }
 
     if (firstCard !== "" &&  secondCard !== ""){
-        secondClick(firstCard, secondCard)
+        secondClick()
     }
 
 }

@@ -100,15 +100,7 @@ main {
     display: none;
 }
 
-.reveal-card {
-    transform: rotateY(180deg);
-}
-
-
 /* fim main */ 
-
-
-
 
 @media (max-width: 635px){
     header h1 {
