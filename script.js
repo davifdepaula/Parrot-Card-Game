@@ -54,11 +54,6 @@ function startGame() {
     showCards(backCards, frontCards);
 }
 
-function showSeconds(){
-    const content = document.querySelector("header")
-    content.innerHTML += `<div class="showSeconds"> ${seconds} </div>`
-}
-
 
 function creatFrontCards(numberCards) {
     const arr = [];
@@ -92,12 +87,6 @@ function showCards(backCards, frontCards) {
     }
 }
 
-function turn(element){
-    element.classList.add("turn")
-}
-
-
-
 function hideCard(element){
     const front = element
     const parent = element.parentNode
@@ -115,7 +104,7 @@ function hideCard(element){
 function endGame(){
     if(isInfront.length === numberCards/2){
         setTimeout(() => {
-            alert(`Você ganhou em ${plays} jogadas em ${timer.innerHTML} segundos!`)
+            alert(`Você ganhou em ${plays} jogadas em um tempo de ${timer.innerHTML} segundos!`)
             clearInterval(this.loop)
         }, 100)
     }
