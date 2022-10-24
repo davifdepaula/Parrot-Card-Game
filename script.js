@@ -178,6 +178,6 @@ const startTimer = () => {
 }
 
 window.onload = () => {
-    startTimer();
+   // startTimer();
     startGame();
 }
